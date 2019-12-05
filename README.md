@@ -1,2 +1,2 @@
 # LeetCode
-LeetCode Coding problems Solutions
+LeetCode Practice Problems Solutions
