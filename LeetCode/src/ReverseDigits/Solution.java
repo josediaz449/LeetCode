@@ -42,5 +42,24 @@ public class Solution {
       Solution s = new Solution();
       int x = in.nextInt();
       System.out.println(s.reverse(x));
+
    }
+   public boolean isHappy(int n) {
+      int result = n;
+      int counter =0;
+      while(!(result==1)){
+         if(counter == 15){
+            return false;
+         }
+         int newN=0;
+         String stringN = result+"";
+         for(int i=0;i<stringN.length();i++){
+            newN += Math.pow(Integer.parseInt(Character.toString(stringN.charAt(i))),2);
+         }
+         result=newN;
+         counter+=1;
+      }
+      return true;
+   }
+
 }
